@@ -110,7 +110,7 @@ Responsibilities:
 * Distribute traffic across healthy web servers.
 * Improve availability and fault tolerance.
   
-![app external loadbalancer](screenshots/appexternalloadbalancer.jpeg)
+![app external loadbalancer](screenshots/appexternalloabalancer.jpeg)
 ![login to the machine](screenshots/logintomachine1.jpeg)
 ---
 
@@ -136,7 +136,7 @@ Benefits:
 * Internal traffic remains private.
 * Improved scalability and maintainability.
 
-![app external loadbalancer](screenshots/appexternalloadbalancer.jpeg)
+![app internal loadbalancer](screenshots/appinternalloadbalancer.jpeg)
 ![login to the machine](screenshots/logintomachine2.jpeg)
 ---
 
