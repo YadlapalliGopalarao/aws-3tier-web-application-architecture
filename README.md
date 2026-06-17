@@ -12,6 +12,10 @@ The application code is stored in Amazon S3 and deployed to application servers 
 
 ## Architecture Highlights
 
+![Architecture diagram](architecture-diagram-3tier.jpg)
+![frontend image](screenshots/frontend.jpeg)
+![backend image](screenshots/backend.jpeg)
+
 ### High Availability Design
 
 * Multi-AZ deployment across two Availability Zones.
@@ -45,7 +49,7 @@ The application code is stored in Amazon S3 and deployed to application servers 
 * Internet Gateway
 * Route Tables
 * Security Groups
-
+  
 ### Compute
 
 * Amazon EC2
@@ -55,14 +59,17 @@ The application code is stored in Amazon S3 and deployed to application servers 
 
 * Amazon S3
 
+
 ### Load Balancing
 
 * External Application Load Balancer
 * Internal Application Load Balancer
 
+
 ### Database
 
 * Amazon RDS
+
 
 ### Identity and Access Management
 
@@ -83,6 +90,8 @@ Features:
 * Multi-AZ Architecture
 * Secure Routing Configuration
 
+![Aws vpc configuration](screenshots/vpc.jpeg)
+![Security group configuration](screenshots/securitygroups.jpeg)
 ---
 
 ### 2. Web Tier
@@ -100,7 +109,9 @@ Responsibilities:
 * Accept user requests from the internet.
 * Distribute traffic across healthy web servers.
 * Improve availability and fault tolerance.
-
+  
+![app external loadbalancer](screenshots/appexternalloadbalancer.jpeg)
+![login to the machine](screenshots/logintomachine1.jpeg)
 ---
 
 ### 3. Application Tier
@@ -125,6 +136,8 @@ Benefits:
 * Internal traffic remains private.
 * Improved scalability and maintainability.
 
+![app external loadbalancer](screenshots/appexternalloadbalancer.jpeg)
+![login to the machine](screenshots/logintomachine2.jpeg)
 ---
 
 ### 4. Database Tier
@@ -141,7 +154,8 @@ Responsibilities:
 * Store application data securely.
 * Handle database operations.
 * Provide high availability and reliable storage.
-
+  
+![AWS rds](screenshots/rds.jpeg)
 ---
 
 ### 5. Amazon S3
@@ -153,7 +167,8 @@ Benefits:
 * Centralized application storage.
 * High durability.
 * Easy integration with AWS services.
-
+  
+![Amazon s3 Bucket](screenshots/applicationcodes3.jpeg)
 ---
 
 ### 6. Bastion Host
@@ -165,7 +180,8 @@ Benefits:
 * Secure administrative access.
 * Reduced attack surface.
 * Controlled SSH connectivity.
-
+  
+![AWS instances](screenshots/instances.jpeg)
 ---
 
 ### 7. IAM Roles
